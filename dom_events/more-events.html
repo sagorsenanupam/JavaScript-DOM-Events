@@ -8,6 +8,7 @@
   <body>
     <button id="btn-mouse">Micky Mouse Minnie</button>
     <input id="user-name" type="text" placeholder="Your name" />
+    <input id="user-email" type="text" placeholder="Your Email" />
     <script>
       //   document
       //     .getElementById("btn-mouse")
@@ -24,10 +25,35 @@
       //     .addEventListener("mouseout", function () {
       //       console.log("Mouse Triggered");
       //     });
+      // document
+      //   .getElementById("user-name")
+      //   .addEventListener("focus", function () {
+      //     console.log("User about to write name");
+      //   });
+      // document
+      //   .getElementById("user-email")
+      //   .addEventListener("focus", function () {
+      //     console.log("User about to write email");
+      //   });
+      // document
+      //   .getElementById("user-name")
+      //   .addEventListener("blur", function () {
+      //     console.log("User done write name");
+      //   });
+      // document
+      //   .getElementById("user-email")
+      //   .addEventListener("blur", function () {
+      //     console.log("User done write email");
+      //   });
+      // document
+      //   .getElementById("user-name")
+      //   .addEventListener("keydown", function (Events) {
+      //     console.log("typing", Events.target.value);
+      //   });
       document
         .getElementById("user-name")
-        .addEventListener("focus", function () {
-          console.log("User about to write");
+        .addEventListener("keyup", function (Events) {
+          console.log("typing", Events.target.value);
         });
     </script>
   </body>
